@@ -11,3 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+
+  document.getElementById('b3').onclick = function(){
+    swal("Sccess", "You wil contact you soon", "success");
+  };
