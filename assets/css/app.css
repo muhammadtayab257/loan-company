@@ -167,7 +167,7 @@ header {
 .calculator p {
   font-size: 15px;
   font-weight: 500;
-  color: #000000bd;
+  color: #707b8e!important;
 }
 
 .calculator .range {
@@ -277,6 +277,7 @@ input[type="range"]::-moz-range-thumb:hover {
   font-size: 15px;
   font-weight: 500;
   line-height: 28px;
+  color: #707b8e!important;
 }
 
 .second-section .card:hover {
@@ -309,6 +310,7 @@ input[type="range"]::-moz-range-thumb:hover {
   font-weight: 500;
   line-height: 28px;
   margin: 20px 0px;
+  color: #707b8e;
 }
 
 .third-section .img-right img {
@@ -339,6 +341,7 @@ input[type="range"]::-moz-range-thumb:hover {
   font-weight: 500;
   line-height: 28px;
   margin: 20px 0px;
+  color: #707b8e;
 }
 .fourth-section .btn {
   width: 190px;
@@ -379,6 +382,132 @@ input[type="range"]::-moz-range-thumb:hover {
   color: #000000b0;
 }
 
+/* sixth Section */
+.sixth-section{
+  padding: 40px 10px;
+  background-color: #e7f1ff4a;
+}
+
+.sixth-section h4{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sixth-section .logo {
+  background: #fff;
+    box-shadow: 0 12px 24px #0d0d0d0f;
+    padding: 18px;
+    border-radius: 7px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sixth-section .logo img {
+  width:150px;
+}
+
+
+/* ================= Footer css========================= */
+
+.footer-main {
+  padding: 60px 10px 20px 10px;
+  background-color: #0a2540;
+}
+
+.footer-area .footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-area .footer-pera .info1 {
+  font-size: 16px !important;
+  /* font-family: "Nunito" !important; */
+  color: #ffffffc9;
+  line-height: 29px;
+}
+
+.footer-area .footer-pera2 {
+  margin-bottom: 10px;
+  line-height: 1.8;
+  /* font-family: "Poppins", sans-serif; */
+  color: #ffffffc9;
+  font-size: 16px;
+}
+
+.footer-area .footer-tittle h4 {
+  color: #ffffffc9;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-area .footer-tittle ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-area .footer-tittle ul li {
+  color: #ffffffc9;
+  margin-bottom: 15px;
+}
+
+.footer-area .footer-tittle ul li a {
+  color: #ffffffc9;
+  font-weight: 400;
+  /* font-family: "Nunito"; */
+}
+
+.footer-area .footer-form {
+  margin-top: 40px;
+}
+
+.footer-area .footer-form form {
+  position: relative;
+  display: flex;
+}
+
+.footer-area .footer-form form input {
+  width: 100%;
+  height: 43px;
+  padding: 10px 20px;
+  border: 1px solid #ffffffc9;
+  background: #f9f9fe;
+}
+
+input:focus, input:focus, textarea, textarea:focus {
+  outline: 0;
+}
+
+/* =======================Footer copyright=================== */
+
+.footer-area .footer-copy-right {
+  padding: 10px 0px;
+}
+
+.footer-area .footer-copy-right p {
+  color: #ffffffc9;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 12px;
+}
+
+.footer-area .footer-form form .form-icon button {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 11px 22px;
+  background: #0A2540;
+  line-height: 1;
+}
+
+
 /*? Media Queries Below 991px */
 
 @media (max-width: 991px) {
@@ -404,7 +533,6 @@ input[type="range"]::-moz-range-thumb:hover {
 
   .hamberger-menu .fa {
     font-size: 22px;
-    color: var(--main-color);
   }
 }
 
@@ -440,7 +568,8 @@ input[type="range"]::-moz-range-thumb:hover {
   .second-section,
   .third-section,
   .fourth-section,
-  .fifth-section {
+  .fifth-section,
+  .sixth-section {
     padding: 30px 10px 0px 10px;
   }
 }
