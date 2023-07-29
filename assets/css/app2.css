@@ -1,0 +1,721 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*==========================================
+                Global Classes
+  ========================================== */
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+  color: #0a2540;
+  margin: 0px;
+}
+
+p {
+  color: #343a40;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header Css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.hamberger-menu {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-link a {
+  color: #131238ad;
+  font-weight: 600;
+}
+
+.logo a {
+  font-size: 20px;
+  color: #0a2540;
+
+  text-transform: uppercase;
+}
+
+/* Hero Section Css */
+.hero-section {
+  padding: 40px 0;
+  position: relative;
+  padding: 60px 0px;
+  background-image: url("../media/man-relaxing-in-park.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.hero-section .badge1 {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hero-section ul {
+  padding: 0px;
+  line-height: 35px;
+}
+
+.hero-section ul li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 45px;
+}
+
+.hero-section:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(
+    276deg,
+    rgb(13 110 253 / 14%) 0%,
+    rgb(13 110 253 / 36%) 89%
+  );
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.hero-section .row {
+  position: relative;
+  z-index: 5;
+}
+
+.info-text h1 {
+  font-size: 57px;
+  font-weight: 600;
+  margin: 35px 0px 15px 0px;
+  color: #fff;
+  line-height: 75px;
+}
+
+.info-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #fff !important;
+}
+
+.info-text button {
+  width: 190px;
+  height: 47px;
+  border-radius: 5px;
+  margin: 10px 0px 0px;
+  background: #008fd5;
+  border: 1px solid #008fd5;
+  font-weight: 600;
+}
+
+.info-text h6 {
+  color: #5d5d5d;
+  font-weight: 400;
+  width: 163px;
+}
+
+/*calculator Css */
+
+.calculator h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  background-color: #004aa1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.calculator h4:after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-image: url("https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://webdevcode.com/wp/pylon/live/wp-content/themes/pylon/assets/css/../images/shapes/about-form-shape-1-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-body {
+  padding: 30px 25px;
+}
+
+.form-body button {
+  background-color: #008fd5;
+  border: 1px solid #008fd5;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+/* Custom styles for range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #0d35c7;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #0d35c7;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #0d35c7;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #45a049;
+}
+
+/* second Section Css */
+.second-section {
+  padding: 60px 10px;
+  background-image: linear-gradient(268deg, #fff 0, transparent 66%),
+    repeating-linear-gradient(
+      223deg,
+      rgba(189, 189, 189, 0.08) 0,
+      rgba(189, 189, 189, 0.08) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      268deg,
+      rgba(189, 189, 189, 0.08) 0,
+      rgba(189, 189, 189, 0.08) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      313deg,
+      rgba(189, 189, 189, 0.08) 0,
+      rgba(189, 189, 189, 0.08) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    linear-gradient(178deg, #fff, #fff);
+}
+
+.sec-2 h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sec-2 p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.second-section .card {
+  border: 1px solid #dee9ff;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  height: 385px;
+}
+
+.second-section .card p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #707b8e !important;
+}
+
+.second-section .card:hover {
+  box-shadow: 0 6px 16px rgb(52 105 203/16%);
+}
+
+.second-section .card img {
+  margin-bottom: 8px;
+}
+
+.second-section .card h4 {
+  font-size: 20px;
+  margin: 12px 0px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+/* Third Section */
+.third-section {
+  padding: 45px 10px;
+}
+
+.third-section h4 {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.third-section p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 20px 0px;
+  color: #707b8e;
+}
+
+.third-section .img-right img {
+  /* border-radius: 20px 100px 20px 20px; */
+  border-radius: 5px;
+}
+
+.third-section .btn {
+  width: 190px;
+  height: 47px;
+  border-radius: 58px;
+  background: #0a2540;
+  border: 1px solid #0a2540;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* fourth Section */
+.fourth-section {
+  padding: 45px 10px;
+  background-color: rgb(231 241 255 / 34%);
+}
+
+.fourth-section h4 {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.fourth-section p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 20px 0px;
+  color: #707b8e;
+}
+
+.fourth-section .btn {
+  width: 190px;
+  height: 47px;
+  border-radius: 58px;
+  background: #0a2540;
+  border: 1px solid #0a2540;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.fourth-section .img-right img {
+  border-radius: 5px;
+}
+
+/* fifth Section */
+.fifth-section {
+  padding: 45px 10px;
+  background-color: rgb(231 241 255 / 34%);
+}
+
+.fifth-section h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fifth-section .accordion-item {
+  margin: 15px 0px;
+  border: 0px;
+  box-shadow: 0 6px 16px rgb(52 105 203/16%);
+  padding: 0px 0px 10px 0px;
+  border-radius: 8px;
+}
+
+.fifth-section .accordion-item button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000b0;
+}
+
+/* fifth Section */
+.sixth-section {
+  padding: 45px 10px;
+}
+
+.sixth-section h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sixth-section ul {
+  margin-top: 22px;
+}
+
+.sixth-section ul li {
+  line-height: 35px;
+  font-weight: 500;
+  color: #556065;
+  font-size: 16px;
+  list-style-type: disc;
+}
+
+/* sixth-section */
+.seventh-section {
+  padding: 45px 10px;
+  background-color: rgb(231 241 255 / 34%);
+}
+
+.seventh-section .card {
+  border: 1px solid #dee9ff;
+  background: #fff;
+  padding: 45px 30px;
+  border-radius: 5px;
+  height: auto;
+}
+
+.seventh-section .card:hover {
+  box-shadow: 0 6px 16px rgb(52 105 203/16%);
+}
+
+.seventh-section .card h4 {
+  font-size: 25px;
+  margin: 12px 0px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.seventh-section .card p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(112, 123, 142) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0;
+}
+
+/* ================= Footer css========================= */
+.footer-main {
+  padding: 60px 10px 20px 10px;
+  background-color: #0a2540;
+}
+
+.footer-area .footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-area .footer-pera .info1 {
+  font-size: 16px !important;
+  /* font-family: "Nunito" !important; */
+  color: #ffffffc9;
+  line-height: 29px;
+}
+
+.footer-area .footer-pera2 {
+  margin-bottom: 10px;
+  line-height: 1.8;
+  /* */
+  color: #ffffffc9;
+  font-size: 16px;
+}
+
+.footer-area .footer-tittle h4 {
+  color: #ffffffc9;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-area .footer-tittle ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-area .footer-tittle ul li {
+  color: #ffffffc9;
+  margin-bottom: 15px;
+}
+
+.footer-area .footer-tittle ul li a {
+  color: #ffffffc9;
+  font-weight: 400;
+  /* font-family: "Nunito"; */
+}
+
+.footer-area .footer-form {
+  margin-top: 40px;
+}
+
+.footer-area .footer-form form {
+  position: relative;
+  display: flex;
+}
+
+.footer-area .footer-form form input {
+  width: 100%;
+  height: 43px;
+  padding: 10px 20px;
+  border: 1px solid #ffffffc9;
+  background: #f9f9fe;
+}
+
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+/* =======================Footer copyright=================== */
+
+.footer-area .footer-copy-right {
+  padding: 10px 0px;
+}
+
+.footer-area .footer-copy-right p {
+  color: #ffffffc9;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 12px;
+}
+
+.footer-area .footer-form form .form-icon button {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 11px 22px;
+  background: #0a2540;
+  line-height: 1;
+}
+
+/*? Media Queries Below 991px */
+@media (max-width: 991px) {
+  header {
+    display: flex;
+    padding: 20px 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(245, 242, 242);
+    padding: 20px 10px;
+    display: none;
+  }
+
+  .hamberger-menu .fa {
+    font-size: 22px;
+  }
+}
+
+/*  */
+@media (max-width: 767px) {
+  .hero-section {
+    margin: 0px 0px;
+    border-radius: 0px;
+  }
+
+  .info-text h1 {
+    font-size: 30px !important;
+    line-height: 45px;
+  }
+
+  .title-main {
+    font-size: 30px !important;
+  }
+
+  .info-text .d-flex {
+    display: block !important;
+  }
+
+  .info-text ul {
+    margin-bottom: 0px;
+  }
+
+  .second-section{
+    padding: 30px 10px!important;
+  }
+
+  .second-section .title-main {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+
+  .third-section .title-main  {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+
+  .sec-2 p {
+    font-size: 17px;
+  }
+
+  .second-section .card h4 {
+    font-size: 18px;
+  }
+
+  .second-section .card {
+    margin: 10px 0px;
+    padding: 20px;
+  }
+
+
+  .third-section .title-main {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+
+  .third-section .box {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+
+  .fourth-section .img-right {
+    margin-top: 20px;
+  }
+
+  .fourth-section h4,
+  .sixth-section h4 {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+
+  .fifth-section {
+    margin: 20px 0px;
+  }
+
+  .seventh-section .card{
+    padding: 20px;
+  }
+
+  .seventh-section .card img {
+    width: 100px!important;
+  }
+
+  .seventh-section .card h4{
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+
+
+  .fifth-section h4,.sixth-section{
+    font-size: 24px!important;
+    line-height: 35px;
+  }
+
+  .fifth-section .accordion-item button{
+    font-size: 15px!important;
+    line-height: 20px!important;
+  }
+
+
+  .accordion-body{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 20px 0px;
+    color: #707b8e;
+  }
+
+
+  .calculator {
+    margin-top: 20px;
+  }
+
+
+
+
+  .second-section,
+  .third-section,
+  .fourth-section,
+  .fifth-section,
+  .sixth-section {
+    padding: 30px 10px!important;
+  }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px)  {
+.second-section .card {
+  height:340px;
+}
+}
+
