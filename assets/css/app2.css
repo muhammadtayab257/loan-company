@@ -87,7 +87,7 @@ header {
 
 .hero-section .badge1 {
   background-color: #f8f9fa;
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -635,6 +635,7 @@ textarea:focus {
   .second-section .card {
     margin: 10px 0px;
     padding: 20px;
+    height: auto!important;
   }
 
 
@@ -697,7 +698,7 @@ textarea:focus {
 
 
   .calculator {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
 
