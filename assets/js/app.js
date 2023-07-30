@@ -1,5 +1,3 @@
-AOS.init();
-
 
 document.addEventListener('DOMContentLoaded', function() {
     var rangeInput = document.getElementById('customRange1');
@@ -13,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
 
-  document.getElementById('b3').onclick = function(){
-    swal("Sccess", "You wil contact you soon", "success");
-  };
+  const menuBtn = document.getElementById('btnHamberger')
+  const navMain = document.getElementById('nav-main')
+
+
+  menuBtn.addEventListener('click', () => {
+    console.log("Ddddddddddddddddddddddddddddddddddd");
+    navMain.classList.toggle('active')
+  })
+
+  console.log(navMain);

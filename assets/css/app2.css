@@ -282,7 +282,7 @@ input[type="range"]::-moz-range-thumb:hover {
   background: #fff;
   padding: 30px;
   border-radius: 5px;
-  height: 385px;
+  height: 400px;
 }
 
 .second-section .card p {
@@ -533,6 +533,84 @@ textarea:focus {
   outline: 0;
 }
 
+/* =======================Privacy-policy Page=================== */
+
+.privacy-policy {
+  background-color: rgb(231 241 255 / 34%);
+  padding: 40px 0px;
+}
+
+.privacy-policy .title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.privacy-policy .info h4 {
+  font-size: 30px;
+}
+
+.privacy-policy .info p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 20px 0px;
+  color: #707b8e;
+}
+
+/* =======================how works=================== */
+
+.how-works {
+  background-color: rgb(231 241 255 / 34%);
+  padding: 40px 0px;
+}
+
+.how-works .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-works .title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.how-works .title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.how-works .card {
+  border: 1px solid #dee9ff;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  height: 385px;
+}
+
+.how-works .card h4 {
+  font-size: 20px;
+  margin: 12px 0px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.how-works .card p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #707b8e !important;
+}
+
 /* =======================Footer copyright=================== */
 
 .footer-area .footer-copy-right {
@@ -561,24 +639,45 @@ textarea:focus {
 
 /*? Media Queries Below 991px */
 @media (max-width: 991px) {
+  .hamberger-menu {
+    display: block;
+  }
+  .logo {
+    z-index: 99999;
+    position: relative;
+    left: 75px;
+  }
+ .nav-main{
+  display: none;
+ }
+ .nav-main.active{
+  display: block!important;
+ }
   header {
     display: flex;
     padding: 20px 16px;
     align-items: center;
     justify-content: space-between;
   }
+  
+
 
   .nav-links {
+    padding-top: 75px !important;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    top: 0px;
     left: 0;
-    width: 100%;
     overflow: hidden;
-    background: rgb(245, 242, 242);
+    background: #fff;
     padding: 20px 10px;
-    display: none;
+    z-index: 999;
+    border-top: 1px solid #adb5bd;
+    width: 300px;
+    bottom: 0;
+    height: 100vh;
+    transition: .5s ease;
   }
 
   .hamberger-menu .fa {
@@ -588,6 +687,9 @@ textarea:focus {
 
 /*  */
 @media (max-width: 767px) {
+  .hamberger-menu {
+    display: block;
+  }
   .hero-section {
     margin: 0px 0px;
     border-radius: 0px;
@@ -610,8 +712,8 @@ textarea:focus {
     margin-bottom: 0px;
   }
 
-  .second-section{
-    padding: 30px 10px!important;
+  .second-section {
+    padding: 30px 10px !important;
   }
 
   .second-section .title-main {
@@ -619,7 +721,7 @@ textarea:focus {
     line-height: 35px;
   }
 
-  .third-section .title-main  {
+  .third-section .title-main {
     font-size: 24px !important;
     line-height: 35px;
   }
@@ -635,9 +737,8 @@ textarea:focus {
   .second-section .card {
     margin: 10px 0px;
     padding: 20px;
-    height: auto!important;
+    height: auto !important;
   }
-
 
   .third-section .title-main {
     font-size: 24px !important;
@@ -663,32 +764,31 @@ textarea:focus {
     margin: 20px 0px;
   }
 
-  .seventh-section .card{
+  .seventh-section .card {
     padding: 20px;
   }
 
   .seventh-section .card img {
-    width: 100px!important;
+    width: 100px !important;
   }
 
-  .seventh-section .card h4{
+  .seventh-section .card h4 {
     font-size: 20px !important;
     line-height: 28px;
   }
 
-
-  .fifth-section h4,.sixth-section{
-    font-size: 24px!important;
+  .fifth-section h4,
+  .sixth-section {
+    font-size: 24px !important;
     line-height: 35px;
   }
 
-  .fifth-section .accordion-item button{
-    font-size: 15px!important;
-    line-height: 20px!important;
+  .fifth-section .accordion-item button {
+    font-size: 15px !important;
+    line-height: 20px !important;
   }
 
-
-  .accordion-body{
+  .accordion-body {
     font-size: 15px;
     font-weight: 500;
     line-height: 28px;
@@ -696,27 +796,50 @@ textarea:focus {
     color: #707b8e;
   }
 
-
   .calculator {
     margin-top: 40px;
   }
-
-
-
 
   .second-section,
   .third-section,
   .fourth-section,
   .fifth-section,
   .sixth-section {
-    padding: 30px 10px!important;
+    padding: 30px 10px !important;
+  }
+
+  /*  */
+
+  .how-works .title p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  /*  */
+
+  .privacy-policy .title h4 {
+    font-size: 24px !important;
+    margin: 20px 0px 37px 0px;
+    text-transform: uppercase;
+  }
+  .privacy-policy .info h4 {
+    font-size: 24px !important;
+  }
+
+  .how-works .title h4 {
+    font-size: 24px !important;
+    text-transform: uppercase;
   }
 }
 
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .second-section .card {
+    height: 340px;
+  }
 
-@media only screen and (min-width: 767px) and (max-width: 991px)  {
-.second-section .card {
-  height:340px;
-}
+  .how-works .card {
+    height: 340px;
+  }
 }
 
+/* menu */
