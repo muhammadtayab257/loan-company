@@ -671,13 +671,14 @@ textarea:focus {
     left: 0;
     overflow: hidden;
     background: #fff;
-    padding: 20px 10px;
+    padding: 20px 18px;
     z-index: 999;
     border-top: 1px solid #adb5bd;
     width: 300px;
     bottom: 0;
     height: 100vh;
     transition: .5s ease;
+    align-items: flex-start;
   }
 
   .hamberger-menu .fa {
